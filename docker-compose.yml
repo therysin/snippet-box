@@ -1,7 +1,7 @@
 version: '3'
 services:
   snippet-box:
-    image: pawelmalak/snippet-box
+    image: thorstenme/snippet-box
     container_name: snippet-box
     volumes:
       - /path/to/host/data:/app/data
