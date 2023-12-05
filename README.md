@@ -24,7 +24,7 @@ Snippet Box is a simple self-hosted app for organizing your code snippets. It al
 
 ```sh
 # clone repository
-git clone https://github.com/pawelmalak/snippet-box
+git clone https://github.com/kaysgericht/snippet-box
 cd snippet-box
 
 # install dependencies (run only once)
