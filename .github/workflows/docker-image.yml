@@ -2,9 +2,7 @@ name: snip-build
 
 on:
   workflow_dispatch:
-    branches:
-      - "main"
-
+  
 jobs:
   docker:
     runs-on: ubuntu-latest
@@ -29,6 +27,6 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
-          platforms: linux/amd64,linux/arm64
+          platforms: linux/arm64
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/snippet-box:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/snippet-box:1.0.0
